@@ -1,0 +1,92 @@
+body{
+ min-height: 100vh;
+ background-color: #dab3ff;
+ background-image: -webkit-linear-gradient(45deg ,  #9933ff 50% , #dab3ff 50%);
+ background-repeat: no-repeat;
+ 
+ 
+}
+
+
+#tagline{
+ color: #4d004d;
+ margin-top:0px ;
+ margin-left: 50px;
+ font-size: xx-large;
+ font-weight: bold;
+ font-style: oblique;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ position: absolute;
+}
+.listcontainer{
+ max-width: 400px;
+ margin: auto;
+ background: white;
+ border-radius: 5px;
+ box-shadow: rgba(0, 0, 0, 0.3);
+position: relative;
+}
+
+
+#heading{
+ padding: 10px;
+}
+.datecontainer{
+ max-width: 400px;
+ margin:auto;
+ background: #9933ff ;
+ border-radius: 5px;
+ box-shadow: rgba(0, 0, 0, 0.3);
+ text-align: center;
+ 
+
+}
+.items{
+ min-height: 70px;
+ display: flex;
+ align-items: center;
+ border-bottom: 1px solid #f1f1f1;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+.items:last-child{
+ min-height: 70px;
+ border-bottom: none;
+}
+input[type = "checkbox"]{
+ margin: 20px;
+}
+input[type = "text"]{
+ margin-left: 20px;
+ padding: 20px;
+ width: 280px;
+ border: none;
+ font-size: 20px;
+ text-align: center;
+}
+input[type = "text"]:focus{
+ outline: none;
+
+}
+input[type = "text"]:hover{
+ border-bottom: 3px solid #9933ff;
+}
+input:checked+p{
+ text-decoration: line-through;
+ text-decoration-color: #9933ff;
+}
+#form{
+  min-height: 70px;
+ 
+  border: none;
+}
+#btn{
+ width: 50px;
+ min-height: 50px;
+ background: #9933ff;
+ border-radius: 50%;
+ font-size: 30px;
+ border-color: transparent;
+}
+
