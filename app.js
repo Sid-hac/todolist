@@ -1,10 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const dotenv = require("dotenv").config();
 
 const app = express();
 
 let newListItems=["buy food" , "cook food " , "eat food"];
 let workitems = [];
+let port = process.env.PORT || 5000;
+
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended : true}));
@@ -52,6 +55,6 @@ app.post("/work" , function(req,res){
 })
 
 
-app.listen(3000 , function(){
-console.log("server started at port 3000");
+app.listen(port , function(){
+console.log(`server started at port ${port}`);
 });
