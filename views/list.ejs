@@ -15,14 +15,17 @@
      <h1 id="heading"> <%= listtitle %> </h1>
     </div>
     <div class="listcontainer">
-    
-        <% for(var i = 0; i < items.length; i++ ){ %>
-          <div class="items">
-            <input type="checkbox" >
-            <p> <%= items[i] %> </p>
-          </div>
-          
-          <% } %>
+
+         <% items.forEach(function(item){ %>
+            <form action="/delete" method="post">
+
+              <div class="items">
+                <input type="checkbox" value="<%= item._id %>" name="checkbox" onchange="this.form.submit()">
+                <p> <%= item.name %> </p>
+              </div>
+              <input type="hidden" name="Listname" value="<%= listtitle %>"> </input>
+            </form>
+         <% }); %>
         
      
         <form id="form" action="/" method="post" >
