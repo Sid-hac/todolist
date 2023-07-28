@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 
 // Connection URI
-const uri = 'mongodb://0.0.0.0:27017/todolistDB';
+const uri = 'mongodb+srv://admin-sid:Test123@cluster0.pzaip36.mongodb.net/todolistDB';
 
 // Connect to the MongoDB server
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
